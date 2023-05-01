@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  font-size: 17px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/11/accessibility-game-awards.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#title, #description {
+  text-align: center;
+}
+
+#description {
+  font-style: italic;
+  padding-bottom: 20px;
+}
+
+#title {
+  font-size: 2em;
+  padding-top: 20px;
+}
+
+h1, p, label {
+  color: white;
+}
+
+form {
+  background-color:rgba(24, 32, 93, 0.752);
+  margin: auto;
+  min-width: auto;
+  max-width: 720px;
+  padding: 0 25px 25px 25px;
+}
+
+form, input, select {
+  border-radius: 5px;
+}
+
+input, select {
+  padding: 0.5rem;
+}
+
+fieldset {
+  border: none;
+  padding-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.6rem;
+}
+
+.intro > label {
+  display: block;
+  margin: 1.5rem 0 0.5rem 0;
+}
+
+input[type="email"], input[type="text"], input[type="number"], input[type="submit"], select, textarea {
+  width: 100%;
+}
+
+input[type="checkbox"], input[type="radio"], span {
+  vertical-align: middle;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  width: 20px;
+  height: 20px;
+}
+
+textarea {
+  min-height: 8rem;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  margin: 2em auto;
+  height: 3em;
+  font-size: 1em;
+  background-color: #2d9d6e;
+  min-width: 300px;
+  color: white;
+}
+
+@media only screen and (max-width: 765px) {
+  form {
+    background-color:rgba(24, 32, 93, 0.752);
+    margin: auto;
+    max-width: 520px;
+    padding: 0 25px 25px 25px;
+  }
+}

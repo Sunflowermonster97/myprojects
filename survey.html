@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Game of the Year Survey</title>
+    <link rel="stylesheet" href="form.css">
+  </head>
+
+  <body>
+    <h1 id="title">Game of the Year Survey Form</h1>
+    <p id="description">Thank you for taking your time to fill out this survey</p>
+    <form id="survey-form">
+      <fieldset class="intro">
+        <label for="name" id="name-label"><span>Name</span></label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <label for="email" id="email-label"><span>Email</span></label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <label for="number" id="number-label"><span>Age (Optional)</span></label>
+        <input type="number" id="number" name="number" min="10" max="120" placeholder="Age">
+      </fieldset>
+      <fieldset>
+        <label for="gender">Gender</label>
+        <label for="male">
+          <input type="radio" id="male" name="gender" value="m">
+          <span>Male</span>
+        </label>
+        <label for="female">
+          <input type="radio" id="female" name="gender" value="f">
+          <span>Female</span>
+        </label>
+        <label for="others">
+          <input type="radio" id="others" name="gender" value="o">
+          <span>Others</span>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="improvement">What kind of genre are your favorite? (Check all that apply)</label>
+        <label for="music">
+          <input type="checkbox" id="music" name="genre" value="Music">
+          <span>Music</span></label>
+        <label for="fighting">
+          <input type="checkbox" id="fighting" name="genre" value="Fighting">
+          <span>Fighting</span></label>
+        <label for="fantasy">
+          <input type="checkbox" id="fantasy" name="genre" value="Fantasy">
+          <span>Fantasy</span></label>
+        <label for="shooting">
+          <input type="checkbox" id="shooting" name="genre" value="Shooting">
+          <span>Shooting</span></label>
+        <label for="horror">
+          <input type="checkbox" id="horror" name="genre" value="Horror">
+          <span>Horror</span></label>
+      </fieldset>
+      <fieldset>
+        <label for="games">Vote for the best Video Game of 2022:</label>
+        <select id="dropdown" name="games">
+          <option selected="true" disabled="disabled">Select an option</option>
+          <option value="elden_ring">Elden Ring</option>
+          <option value="gow">God of War Ragnarok</option>
+          <option value="horizon">Horizon Forbidden West</option>
+          <option value="stray">Stray</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <label for="comment">Any comments or suggestions?</label>
+        <textarea name="comment" placeholder="Enter your comment here..."></textarea>
+        <input id="submit" type="submit" value="Submit">
+      </fieldset>
+    </form>
+  </body>
+</html>
